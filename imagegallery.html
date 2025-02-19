@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Comic Strip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .comic-strip {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .panel {
+            width: 250px;
+            height: 250px;
+            background: white;
+            border: 3px solid black;
+            padding: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .speech-bubble {
+            background: white;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+        }
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dino Comic Strip</h1>
+
+    <div class="comic-strip">
+        <div class="panel">
+            <div class="speech-bubble">I will ROAR!</div>
+            <img src="https://i.imgur.com/GDfnm2O.png" alt="Dino thinking">
+        </div>
+        <div class="panel">
+            <div class="speech-bubble">ROOOAAARRR!</div>
+            <img src="https://i.imgur.com/vHgXULl.png" alt="Dino roaring">
+        </div>
+        <div class="panel">
+            <div class="speech-bubble">Aww, so cute!</div>
+            <img src="https://i.imgur.com/58K4IRs.png" alt="Dino looking confused">
+        </div>
+    </div>
+
+</body>
+</html>
